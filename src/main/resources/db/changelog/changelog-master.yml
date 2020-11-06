@@ -1,0 +1,18 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Pawel
+      runInTransaction: true
+      changes:
+        - createTable:
+            tableName: something
+            columns:
+              - column:
+                  name: text
+                  type: varchar
+        - insert:
+            columns:
+              - column:
+                  name: text
+                  value: "FooBar"
+            tableName: something
