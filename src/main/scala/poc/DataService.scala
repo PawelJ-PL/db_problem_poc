@@ -1,9 +1,9 @@
 package poc
 
-import io.github.gaelrenoux.tranzactio.doobie.Database
+import io.github.gaelrenoux.tranzactio.doobie._
 import poc.database.Repository
 import poc.database.Repository.Repository
-import zio.{Has, Task, UIO, ZIO, ZLayer}
+import zio.{Has, UIO, ZIO, ZLayer}
 
 object DataService {
 
